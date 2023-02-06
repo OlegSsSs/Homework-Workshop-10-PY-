@@ -74,7 +74,7 @@ async def gamestart(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
             await update.message.reply_text(message)
 
 
-app = ApplicationBuilder().token("5879042921:AAEZ-ADgXhqC5x6A5h3_AMRAqRukZTVGu70").build()
+app = ApplicationBuilder().token("TOKEN").build()
 print ('Server start')
 app.add_handler(CommandHandler("GAME", gamestart))
 
